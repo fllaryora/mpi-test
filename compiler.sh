@@ -21,6 +21,4 @@ fi
 GCCARGS="-O3 -D_POSIX_C_SOURCE=199309L -lrt -std=c99"
 
 echo "$COMPILER -Wall $GCCARGS -lm -lwjelement -lwjreader -o Engine test.c"
-$COMPILER -Wall $GCCARGS -lm -lwjelement -lwjreader -o Engine test.c
-
-rm *.o
+$COMPILER -Wall $GCCARGS -lm  -o Engine test.c
